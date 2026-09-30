@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4f6f0" />
+    <meta
+      name="description"
+      content="Find your next favourite piece of golf gear. Shop and sell pre-loved equipment at Second Shot Club."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <title>Second Shot Club — good gear, still in the game</title>
+  </head>
+  <body>
+    <div class="announcement">
+      <span class="announcement-dot"></span> GOOD GEAR DESERVES ANOTHER GO-ROUND
+      <span class="announcement-detail">Find your favourite round again.</span>
+    </div>
+    <header class="site-header">
+      <a class="wordmark" href="#home" aria-label="Second Shot Club home"
+        ><span class="wordmark-mark">2<span>nd</span></span
+        ><span class="wordmark-name"
+          >SECOND SHOT<span class="wordmark-club">CLUB</span></span
+        ></a
+      >
+      <nav class="primary-nav" aria-label="Main navigation">
+        <a class="nav-link is-active" href="#shop">Shop</a
+        ><a class="nav-link" href="#categories">Categories</a
+        ><a class="nav-link" href="#sell">Sell your gear</a>
+      </nav>
+      <div class="header-actions">
+        <button
+          class="icon-button search-toggle"
+          type="button"
+          aria-label="Search equipment"
+          title="Search"
+        >
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="10.8" cy="10.8" r="6.8" />
+            <path d="m16 16 4.1 4.1" />
+          </svg></button
+        ><button class="account-button" id="account-button" type="button">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="12" cy="8" r="3.4" />
+            <path d="M5.7 20v-1.5a6.3 6.3 0 0 1 12.6 0V20Z" /></svg
+          ><span>Sign in</span></button
+        ><button
+          class="icon-button cart-button"
+          id="cart-button"
+          type="button"
+          aria-label="Shopping bag, 0 items"
+          title="Shopping bag"
+        >
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4.5 8.5h15l-1 12h-13Z" />
+            <path d="M9 9V6a3 3 0 0 1 6 0v3" /></svg
+          ><span class="cart-count" id="cart-count">0</span>
+        </button>
+      </div>
+    </header>
+    <main id="home">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-image"></div>
+        <div class="hero-content">
+          <div class="eyebrow hero-eyebrow">
+            <span></span> THE GOOD GAME, FOR EVERYONE
+          </div>
+          <h1 id="hero-title">
+            Your next<br />great round<br /><span>starts here.</span>
+          </h1>
+          <p>
+            Good gear. More game. Shop pre-loved favourites and find your next
+            reason to love the course.
+          </p>
+          <a class="button button-dark hero-button" href="#shop"
+            >Shop the collection <span aria-hidden="true">↗</span></a
+          >
+          <div class="hero-note">
+            <span class="hero-note-icon">✳</span
+            ><span
+              >BETTER GEAR, LESS WASTE.<br /><strong
+                >THAT’S A ROUND WORTH PLAYING.</strong
+              ></span
+            >
+          </div>
+        </div>
+        <div class="hero-side-label">
+          SECOND SHOT CLUB &nbsp;·&nbsp; MADE FOR WHAT’S NEXT
+        </div>
+        <div class="hero-image-caption">
+          <span>01</span><span>THE GAME HAS A NEXT ROUND.</span>
+        </div>
+      </section>
+      <section
+        class="category-section"
+        id="categories"
+        aria-labelledby="categories-title"
+      >
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">FIND YOUR FIT</span>
+            <h2 id="categories-title">What are you after?</h2>
+          </div>
+          <a class="text-link category-all" href="#shop"
+            >Explore everything <span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <div class="category-grid">
+          <button class="category-tile" data-category="Drivers" type="button">
+            <span class="category-image cat-drivers"></span
+            ><span class="category-copy"
+              ><span>01 / OFF THE TEE</span
+              ><strong>Drivers <span>↗</span></strong></span
+            ></button
+          ><button class="category-tile" data-category="Irons" type="button">
+            <span class="category-image cat-irons"></span
+            ><span class="category-copy"
+              ><span>02 / FIND YOUR LINE</span
+              ><strong>Irons <span>↗</span></strong></span
+            ></button
+          ><button class="category-tile" data-category="Bags" type="button">
+            <span class="category-image cat-bags"></span
+            ><span class="category-copy"
+              ><span>03 / CARRY YOUR GAME</span
+              ><strong>Bags <span>↗</span></strong></span
+            ></button
+          ><button class="category-tile" data-category="Apparel" type="button">
+            <span class="category-image cat-apparel"></span
+            ><span class="category-copy"
+              ><span>04 / MADE FOR THE COURSE</span
+              ><strong>Apparel <span>↗</span></strong></span
+            >
+          </button>
+        </div>
+      </section>
+      <section class="market-section" id="shop" aria-labelledby="market-title">
+        <div class="section-heading market-heading">
+          <div>
+            <span class="eyebrow"
+              ><span class="live-dot"></span> THE COMMUNITY COLLECTION</span
+            >
+            <h2 id="market-title">Gear that’s <em>still got it.</em></h2>
+          </div>
+          <p class="market-intro">
+            Passed on, not passed over. Discover the pieces golfers are giving a
+            second go.
+          </p>
+        </div>
+        <div class="preview-banner" id="preview-banner" hidden>
+          <span class="preview-mark">i</span
+          ><span
+            ><strong>Preview collection.</strong> Example listings are for
+            display. Connect your services to take payments and publish real
+            items.</span
+          >
+        </div>
+        <div class="market-controls">
+          <div class="search-wrap" id="search-wrap">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <circle cx="10.8" cy="10.8" r="6.8" />
+              <path d="m16 16 4.1 4.1" /></svg
+            ><input
+              id="search-input"
+              type="search"
+              placeholder="Find your next favourite..."
+              aria-label="Search equipment"
+            /><kbd>/</kbd>
+          </div>
+          <div
+            class="filter-set"
+            id="filter-set"
+            aria-label="Filter by condition"
+          >
+            <button
+              class="filter-chip is-selected"
+              type="button"
+              data-condition="All"
+            >
+              All gear</button
+            ><button class="filter-chip" type="button" data-condition="Basic">
+              Basic</button
+            ><button class="filter-chip" type="button" data-condition="Pro">
+              Pro</button
+            ><button class="filter-chip" type="button" data-condition="Ultra">
+              Ultra
+            </button>
+          </div>
+          <label class="sort-select"
+            ><span class="visually-hidden">Sort products</span
+            ><select id="sort-select">
+              <option value="featured">Featured</option>
+              <option value="price-low">Price: low to high</option>
+              <option value="price-high">Price: high to low</option>
+              <option value="newest">Newest first</option>
+            </select></label
+          >
+        </div>
+        <div
+          class="active-filters"
+          id="active-filters"
+          aria-live="polite"
+        ></div>
+        <div
+          class="product-grid"
+          id="product-grid"
+          aria-live="polite"
+          aria-busy="false"
+        ></div>
+        <div class="empty-results" id="empty-results" hidden>
+          <span class="empty-icon">⌁</span>
+          <h3>No gear on this fairway.</h3>
+          <p>Try another filter or clear your search.</p>
+          <button class="text-link" id="clear-search" type="button">
+            Clear all filters ↗
+          </button>
+        </div>
+        <div class="market-footer">
+          <span id="result-count">Loading the collection…</span
+          ><button class="text-link" id="reset-filters" type="button">
+            CLEAR FILTERS&nbsp; ×
+          </button>
+        </div>
+      </section>
+      <section class="sell-band" id="sell">
+        <div class="sell-photo"></div>
+        <div class="sell-content">
+          <span class="eyebrow">THE CIRCLE OF THE GAME</span>
+          <h2>Somebody’s next favourite<br />is sitting in your garage.</h2>
+          <p>
+            Give your good gear another go-around. List your items, set your
+            price and make room for the next round.
+          </p>
+          <button class="button button-light" id="sell-button" type="button">
+            List your gear <span aria-hidden="true">↗</span>
+          </button>
+        </div>
+        <div class="sell-number">02<span> / PASS IT ON</span></div>
+      </section>
+      <section class="promise-strip" aria-label="Our marketplace approach">
+        <div>
+          <span>✳</span><strong>A GAME THAT GOES FURTHER.</strong
+          ><span>Good gear deserves more than one round.</span>
+        </div>
+        <div>
+          <span>↗</span><strong>LIST WHAT YOU LOVE.</strong
+          ><span>Every listing keeps great gear in play.</span>
+        </div>
+        <div>
+          <span>⌁</span><strong>FIND A BETTER FIT.</strong
+          ><span>Your next round starts with the right gear.</span>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <a class="wordmark footer-wordmark" href="#home"
+        ><span class="wordmark-mark">2<span>nd</span></span
+        ><span class="wordmark-name"
+          >SECOND SHOT<span class="wordmark-club">CLUB</span></span
+        ></a
+      ><span>KEEP GOOD GEAR IN THE GAME.</span
+      ><span>© 2026 SECOND SHOT CLUB</span>
+    </footer>
+    <div class="scrim" id="scrim" hidden></div>
+    <aside
+      class="cart-panel"
+      id="cart-panel"
+      aria-labelledby="cart-title"
+      aria-hidden="true"
+    >
+      <div class="panel-heading">
+        <div>
+          <span class="eyebrow">YOUR NEXT ROUND</span>
+          <h2 id="cart-title">
+            Your bag<span class="wordmark-period">.</span>
+          </h2>
+        </div>
+        <button
+          class="icon-button close-cart"
+          id="close-cart"
+          type="button"
+          aria-label="Close shopping bag"
+        >
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="m6 6 12 12M18 6 6 18" />
+          </svg>
+        </button>
+      </div>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-bottom">
+        <div class="cart-total">
+          <span>Subtotal</span><strong id="cart-total">$0</strong>
+        </div>
+        <p>Shipping and any applicable taxes calculated at checkout.</p>
+        <button
+          class="button button-dark checkout-button"
+          id="checkout-button"
+          type="button"
+        >
+          Head to checkout <span aria-hidden="true">↗</span></button
+        ><span class="secure-note">🔒 &nbsp; SECURE CHECKOUT BY STRIPE</span>
+      </div>
+    </aside>
+    <dialog class="app-dialog" id="auth-dialog" aria-labelledby="auth-title">
+      <button
+        class="dialog-close icon-button"
+        type="button"
+        aria-label="Close sign-in window"
+      >
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="m6 6 12 12M18 6 6 18" />
+        </svg>
+      </button>
+      <div class="dialog-mark">2nd</div>
+      <span class="eyebrow">YOUR GEAR, YOUR SECOND SHOT</span>
+      <h2 id="auth-title">Welcome back.</h2>
+      <p class="dialog-lede">Sign in to keep your next round in reach.</p>
+      <div class="auth-tabs">
+        <button class="auth-tab is-active" type="button" data-mode="signin">
+          Sign in</button
+        ><button class="auth-tab" type="button" data-mode="signup">
+          Create account
+        </button>
+      </div>
+      <form id="auth-form">
+        <label class="form-label" for="auth-email">Email address</label
+        ><input
+          class="form-input"
+          id="auth-email"
+          type="email"
+          name="email"
+          autocomplete="email"
+          placeholder="you@example.com"
+          required
+          maxlength="254"
+        /><label class="form-label" for="auth-password">Password</label
+        ><input
+          class="form-input"
+          id="auth-password"
+          type="password"
+          name="password"
+          autocomplete="current-password"
+          placeholder="At least 8 characters"
+          required
+          minlength="8"
+        /><button
+          class="button button-dark form-submit"
+          type="submit"
+          id="auth-submit"
+        >
+          Sign in <span aria-hidden="true">↗</span>
+        </button>
+        <p
+          class="form-message"
+          id="auth-message"
+          role="status"
+          aria-live="polite"
+        ></p>
+      </form>
+      <p class="privacy-note">
+        Your account is secured by Supabase authentication. Never share your
+        password.
+      </p>
+    </dialog>
+    <dialog
+      class="app-dialog sell-dialog"
+      id="listing-dialog"
+      aria-labelledby="listing-heading"
+    >
+      <button
+        class="dialog-close icon-button"
+        type="button"
+        aria-label="Close listing window"
+      >
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="m6 6 12 12M18 6 6 18" />
+        </svg>
+      </button>
+      <div class="dialog-mark">2nd</div>
+      <span class="eyebrow">KEEP GOOD GEAR IN PLAY</span>
+      <h2 id="listing-heading">List your gear.</h2>
+      <p class="dialog-lede">Give somebody their next favourite find.</p>
+      <form id="listing-form">
+        <label class="form-label" for="listing-name"
+          >What are you selling?</label
+        ><input
+          class="form-input"
+          id="listing-name"
+          name="title"
+          required
+          maxlength="80"
+          placeholder="e.g. TaylorMade Qi10 Driver"
+        />
+        <div class="form-row">
+          <div>
+            <label class="form-label" for="listing-brand">Brand</label
+            ><input
+              class="form-input"
+              id="listing-brand"
+              name="brand"
+              required
+              maxlength="48"
+              placeholder="TaylorMade"
+            />
+          </div>
+          <div>
+            <label class="form-label" for="listing-category">Category</label
+            ><select class="form-input" id="listing-category" name="category">
+              <option>Drivers</option>
+              <option>Irons</option>
+              <option>Wedges</option>
+              <option>Putters</option>
+              <option>Bags</option>
+              <option>Apparel</option>
+              <option>Accessories</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+            <label class="form-label" for="listing-condition">Condition</label
+            ><select class="form-input" id="listing-condition" name="condition">
+              <option>Basic</option>
+              <option>Pro</option>
+              <option>Ultra</option>
+            </select>
+          </div>
+          <div>
+            <label class="form-label" for="listing-quantity"
+              >Quantity available</label
+            ><input
+              class="form-input"
+              id="listing-quantity"
+              name="quantity"
+              type="number"
+              value="1"
+              min="1"
+              max="20"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+            <label class="form-label" for="listing-price">Price (USD)</label
+            ><input
+              class="form-input"
+              id="listing-price"
+              name="price"
+              type="number"
+              min="1"
+              max="10000"
+              step="0.01"
+              required
+              placeholder="125.00"
+            />
+          </div>
+          <div>
+            <label class="form-label" for="listing-image"
+              >Product image URL
+              <span class="field-optional">(optional)</span></label
+            ><input
+              class="form-input"
+              id="listing-image"
+              name="imageUrl"
+              type="url"
+              maxlength="500"
+              placeholder="https://..."
+            />
+          </div>
+        </div>
+        <button
+          class="button button-dark form-submit"
+          id="listing-submit"
+          type="submit"
+        >
+          Publish listing <span aria-hidden="true">↗</span>
+        </button>
+        <p
+          class="form-message"
+          id="listing-message"
+          role="status"
+          aria-live="polite"
+        ></p>
+        <p class="privacy-note">
+          Only HTTPS image links are accepted. Listings are public once
+          published.
+        </p>
+      </form>
+    </dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
